@@ -13,3 +13,7 @@ We run our codes with:
 * torch==1.6.0
 * transformers==4.12.0
 * h5py==3.1.0
+
+## Trained Models
+* PragS2 (PMLM with Emoji_any dataset followed by SFT-E): https://huggingface.co/UBC-NLP/prags2
+* PragS1 (PMLM with Hashtag_end dataset followed by SFT-H): https://huggingface.co/UBC-NLP/prags1
