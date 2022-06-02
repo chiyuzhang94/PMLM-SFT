@@ -1,6 +1,7 @@
-# Repository for WASSA-2022 paper: 
 
-# Improving Social Meaning Detection with Pragmatic Masking and Surrogate Fine-Tuning 
+
+# [Improving Social Meaning Detection with Pragmatic Masking and Surrogate Fine-Tuning](https://arxiv.org/abs/2108.00356)
+#### Accepted by WASSA@ACL-2022: 
 
 [Pragmatic Masking Pre-training Script](https://github.com/chiyuzhang94/PMLM-SFT/language_modeling_emohash_h5.py)
 
