@@ -18,3 +18,12 @@ We run our codes with:
 * PragS1 (PMLM with Hashtag_end dataset followed by SFT-E): https://huggingface.co/UBC-NLP/prags1
 * PragS2 (Best Model, PMLM with Emoji_any dataset followed by SFT-H): https://huggingface.co/UBC-NLP/prags2
 
+You can load these model and use for downstream fine-tuning. For example:
+```
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+
+tokenizer = AutoTokenizer.from_pretrained('UBC-NLP/prags1', use_fast = True)
+model = AutoModelForSequenceClassification.from_pretrained('UBC-NLP/prags1',num_labels=lable_size)
+```
+
+
