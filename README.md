@@ -19,7 +19,7 @@ We run our codes with:
 * PragS2 (Best Model, PMLM with Emoji_any dataset followed by SFT-H): https://huggingface.co/UBC-NLP/prags2
 
 You can load these model and use for downstream fine-tuning. For example:
-```
+```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 tokenizer = AutoTokenizer.from_pretrained('UBC-NLP/prags1', use_fast = True)
