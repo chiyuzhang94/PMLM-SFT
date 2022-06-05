@@ -3,6 +3,10 @@
 # [Improving Social Meaning Detection with Pragmatic Masking and Surrogate Fine-Tuning](https://arxiv.org/abs/2108.00356)
 #### Accepted by WASSA@ACL-2022: 
 
+![](https://github.com/chiyuzhang94/PMLM-SFT/blob/master/pic/title.png)
+
+![](https://github.com/chiyuzhang94/PMLM-SFT/blob/master/pic/illustration.png)
+
 * [Pragmatic Masking Pre-training Script](https://github.com/chiyuzhang94/PMLM-SFT/language_modeling_emohash_h5.py)
 
 * We continue training RoBERTa released on HuggingFace models: [RoBERTa-Base](https://huggingface.co/docs/transformers/model_doc/roberta)
@@ -26,6 +30,9 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 tokenizer = AutoTokenizer.from_pretrained('UBC-NLP/prags1', use_fast = True)
 model = AutoModelForSequenceClassification.from_pretrained('UBC-NLP/prags1',num_labels=lable_size)
 ```
+We evaluate our models on 15 social meaning tasks:
+
+![](https://github.com/chiyuzhang94/PMLM-SFT/blob/master/pic/model_perf.png)
 
 Please cite our paper:
 ```
